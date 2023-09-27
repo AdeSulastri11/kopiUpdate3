@@ -1,0 +1,284 @@
+body {
+  font-family: 'Bree Serif', serif;
+  min-height: 200vh;
+}
+:root {
+  --primary-color: #ab8b65;
+}
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 1rem 3.5%;
+  transition: all 2s;
+}
+/* navbar */
+nav {
+  z-index: 9999999999;
+  padding: 1.6rem 3.5%;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  justify-content: space-between;
+  color: white;
+  transition: .4s;
+}
+.navLogo {
+  display: flex;
+}
+.navLogo img {
+  max-width: 30px
+}
+.navLogo h1 {
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: 2.4px;
+}
+.cart_coffee {
+  display: flex;
+  align-items: center;
+}
+.scrolled {
+  background-color: var(--primary-color);
+  color: white;
+}
+/* landing page */
+.landingPage {
+  background-image: url(../img/bg-landingPage1.jpg);
+  height: 70vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.rectangle1 {
+  background: #000000c2;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kopi {
+  position: fixed;
+  z-index: 2;
+  transition: transform 4s; 
+}
+
+.daun-kopi1 {
+  position: absolute;
+  width: 130px;
+  left: 20px;
+  top: 34px;
+  filter: blur(2px);
+}
+
+.daun-kopi2 {
+  position: absolute;
+  width: 90px;
+  left: 400px;
+  top: 94px;
+  rotate: 10deg;
+}
+
+.daun-kopi3 {
+  position: absolute;
+  width: 90px;
+  left: 208px;
+  top: 299px;
+}
+
+.daun-kopi4 {
+  position: absolute;
+  width: 50px;
+  left: 220px;
+  bottom: 40px;
+  rotate: 220deg;
+}
+
+.daun-kopi5 {
+  position: absolute;
+  width: 60px;
+  right: 270px;
+  top: 80px;
+  rotate: 20deg;
+}
+
+.daun-kopi6 {
+  position: absolute;
+  width: 70px;
+  right: 160px;
+  top: 200px;
+}
+
+.daun-kopi7 {
+  position: absolute;
+  width: 40px;
+  right: 300px;
+  bottom: 120px;
+  rotate: 125deg;
+}
+
+.daun-kopi8 {
+  position: absolute;
+  width: 60px;
+  right: 100px;
+  bottom: 40px;
+  rotate: 130deg;
+  filter: blur(1px);
+}
+
+.daun-kopi9 {
+  position: absolute;
+  width: 90px;
+  right: 550px;
+  bottom: -30px;
+  rotate: 120deg;
+  filter: blur(2px);
+}
+
+.tittle {
+  color: white;
+  text-align: center; 
+  z-index: 8;
+}
+
+.tittle h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 400%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+}
+/* drink coffee */
+.drink_coffee_container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.drinkCoffee h1 {
+  font-family: 'Selima', cursive;
+  font-weight: bold;
+  font-size: 2.1rem;
+  padding: 30px;
+  text-align: center;
+}
+[class^="menu_kopi_"] {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  column-gap: 2rem;
+  border: 1px solid var(--primary-color);
+}
+[class^="menu_left_"], [class^="menu_right_"] {
+flex: 1 1 200px;
+}
+[class^="menu_left_"] img {
+  aspect-ratio: 1.5/1;
+  width: 100%;
+}
+[class^="menu_right_"] h1{
+  font-size: 25px;
+}
+.detail_middle button {
+  border: 1px solid var(--primary-color);
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+/* cart */
+.cart_container h1 {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-weight: bold;
+}
+.price {
+  display: flex;
+  border-top: 1px solid var(--primary-color);
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.img_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+}
+.name_img {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.img_box img {
+  aspect-ratio: 1/1;
+  width: 10%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.priceCart {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.priceCart iconify-icon {
+  cursor: pointer;
+  font-size: 25px;
+}
+.priceCart iconify-icon:hover {
+  color: red;
+}
+.price {
+  gap: 5px;
+}
+/* footer */
+footer {
+  height: 70vh;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 3.5%;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+footer .left,.middle, .right {
+  flex: 1 1 300px;
+  text-align: left;
+}
+footer .right {
+  flex-direction: column;
+  display: flex;text-align: left;
+}
+footer h4 {
+  font-weight: 900;
+}
+footer .left img {
+  max-width: 10%;
+}
+footer .left .logo {
+  display: flex;
+  align-items: center;
+}
+.social_media a {
+  background-color: var(--primary-color);
+}
+.middle {
+  display: flex;
+  flex-direction: column;  
+  font-size: 15px;
+}

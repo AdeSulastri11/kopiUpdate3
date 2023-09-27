@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #ab8b65;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  font-family: 'Bree Serif', serif;
+  display: grid;
+  align-items: center; 
+  height: 100vh;
+}
+.logIn h2 {
+  font-family: 'Dancing Script', cursive; 
+}
+.Form_logIn {
+  display: grid; 
+  grid-template-columns: 50% 50%;
+  background-color: #bc9a7175;
+  position: relative;
+  margin: auto;
+  width: 60%;
+  height: 60vh;
+  overflow: hidden;
+}
+.left {
+  display: grid;
+  place-items: center;
+}
+.left h1, h1 {
+  position: relative;
+}
+
+.kopi {
+  position: absolute;
+  pointer-events: none;
+  width: 70px;
+}
+.daun_kopi_1 {
+  left: 30%;
+  top: 30%;
+  animation: up_down 5s  linear infinite;
+  
+}
+.daun_kopi_2 {
+  position: absolute;
+  right: 5%;
+  animation: up_down 4s  linear infinite;
+}
+.daun_kopi_3 {
+  top: 20%;
+  right: 50%;
+  animation: up_down 9s  linear infinite;
+}
+.daun_kopi_4 {
+  animation: up_down 12s  linear infinite;
+}
+.daun_kopi_5 {
+  bottom: 5%;
+  animation: up_down 8s  linear infinite;
+}
+@keyframes up_down {
+  0%, 100%{
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+}
+.group {
+  background-color: white;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+}
+.group:hover {
+  box-shadow: #ab8b65;
+}
+[class^="logIn_"] {
+  position: relative;
+  margin: 1rem;
+}
+[class="form_label"] {
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  background-color: white;
+  top: -12px;
+  margin: 0 15px;
+  padding: 0 5px;
+  display: block;
+  transition: .2s;
+  color: #9b9b9b;
+  font-weight: 400;
+  font-size: .9em;
+  pointer-events: none;
+}
+[class="form_field"]::placeholder {
+  color: transparent;
+}
+[class = "form_field"] {
+  border-radius: 5px;
+  padding: 15px 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: #9b9b9b;
+}
+[class = "form_field"]:placeholder-shown ~ .form_label {
+  top: 12px;
+}
+[class = "form_field"]:focus{
+  outline: none;
+  border: 1px solid var(--primary-color) !important;
+}
+[class = "form_field"]:focus ~ .form_label{
+  top: -12px;
+  position: absolute;
+  transition: .2s;
+  color: var(--primary-color);
+}
+.btn_logIn {
+  text-align: center;
+  position: relative;
+}
+.btn_logIn span>button {
+  border: 1px solid var(--primary-color);
+  padding: 0.8em 1.8em;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: .3s ease;
+}
+.btn_logIn span > button::before {
+  content: "";
+  width: 0;
+  height: 400%;
+  display: block;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  transform: translate(-30%, -30%) rotate(45deg);
+  background-color: var(--primary-color);
+  z-index: -1;
+  transition: .5s ease;
+}
+.btn_logIn span > button:hover::before {
+  width: 200%;
+}
+.btn_logIn span > button:hover {
+  color: white;
+}
+.btn_logIn p {
+  padding-top: 10px;
+}

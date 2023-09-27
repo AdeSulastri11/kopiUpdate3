@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link rel="stylesheet" href="../css/styleProducts.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="shortcut icon" href="../img/logo_coffee.png" type="image/x-icon">
+  <!-- google fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Akronim&family=Bree+Serif&family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- iconify -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav id="navbar_products">
+    <div class="navLogo">
+      <img src="../img/logo_coffee.png" alt="">
+      <h1 class="font-bold">Kopi Luwak</h1>
+    </div>
+    </div>
+    <div class="navIcon flex items-center">
+      <!-- cart -->
+      <span class="cart_coffee px-2">
+        <iconify-icon icon="uil:cart" id="cart"></iconify-icon>
+        <p id="count_cart">0</p>
+      </span>
+    </div>
+  </nav>
+
+  <!-- landing page -->
+  <div class="landingPage">
+    <div class="rectangle1 ">
+      <section class="tittle">
+        <h1>OUR PRODUCTS</h1>
+        <h4>100% Organic</h4>
+      </section>
+      <div class="kopiElements">
+        <img class="daun-kopi1 kopi" data-speed="0.1" src="../img/daunKopi1.png" alt="">
+        <img class="daun-kopi2 kopi" data-speed="0.3" src="../img/daunKopi1.png" alt="">
+        <img class="daun-kopi3 kopi" data-speed="0.5" src="../img/bungaKopi.png" alt="">
+        <img class="daun-kopi4 kopi" data-speed="0.3" src="../img/daunKopi2.png" alt="">
+        <img class="daun-kopi5 kopi" data-speed="0.3" src="../img/daunKopi3.png" alt="">
+        <img class="daun-kopi6 kopi" data-speed="0.2" src="../img/bungaKopi.png" alt="">
+        <img class="daun-kopi7 kopi" data-speed="0.4" src="../img/daunKopi2.png" alt="">
+        <img class="daun-kopi8 kopi" data-speed="0.3" src="../img/daunKopi2.png" alt="">
+        <img class="daun-kopi9 kopi" data-speed="0.2" src="../img/daunKopi3.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Products -->
+  <section class="drinkCoffee">
+    <h1>DRINK COFFEE</h1>
+    <div class="drink_coffee_container">
+      <!-- ===== KOPI LUWAK HITAM ======== -->
+      <div class="menu_kopi_luwak_hitam">
+        <div class="menu_left_kopi_hitam">
+          <img src="../img/kopi-luwak-hitam.jpg" alt="">
+          <!-- detail produk -->
+          <div class="detail_">
+            <div class="detail_top flex justify-between">
+              <div class="price">13k</div>
+            </div>
+            <div class="detail_middle plus_min flex justify-between">
+
+              <!-- ========= coffee yang tersedia ============ -->
+              <div class="stock flex items-center">
+                <div class="icon_coffee_cup_stock flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      d="M2 4h8a.5.5 0 0 1 .5.5V9a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2V4.5A.5.5 0 0 1 2 4ZM.5 13.5h13m-3-8.5h1a2 2 0 0 1 2 2h0a2 2 0 0 1-2 2h-1M3 .5v1m5-1v1M5.5.5v1" />
+                  </svg>
+                </div>
+                <p class="px-2">stock</p>
+                <div id="count"></div>
+              </div>
+              <button type="submit" id="addCart">Add Chart</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu_right_kopi_hitam">
+          <h1>Kopi Luwak Hitam</h1>
+          <p class="deskripsi">
+            Kopi Luwak Hitam sering dianggap sebagai salah satu kopi terbaik dan paling eksklusif di dunia, dengan rasa
+            yang khas dan keistimewaan yang sulit ditemukan pada kopi lainnya.
+          </p>
+        </div>
+      </div>
+      <!-- kopi ice cream -->
+      <div class="menu_kopi_ice_cream">
+        <div class="menu_left_kopi_hitam">
+          <img src="../img/kopi-luwak-iceCream.jpg" alt="">
+          <!-- detail produk -->
+          <div class="detail_">
+            <div class="detail_top flex justify-between">
+              <div class="price">13k</div>
+            </div>
+            <div class="detail_middle plus_min flex justify-between">
+
+              <!-- ========= coffee yang tersedia ============ -->
+              <div class="stock flex items-center">
+                <div class="icon_coffee_cup_stock flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      d="M2 4h8a.5.5 0 0 1 .5.5V9a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2V4.5A.5.5 0 0 1 2 4ZM.5 13.5h13m-3-8.5h1a2 2 0 0 1 2 2h0a2 2 0 0 1-2 2h-1M3 .5v1m5-1v1M5.5.5v1" />
+                  </svg>
+                </div>
+                <p class="px-2">stock</p>
+                <div id="count"></div>
+              </div>
+              <button type="submit" id="addCart">Add Chart</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu_right_kopi_hitam">
+          <h1>Kopi Ice Cream</h1>
+          <p class="deskripsi">
+            Kopi Ice Cream memiliki tekstur es krim yang lembut dan rasa kopi yang kaya, yang seringkali dihasilkan dari
+            penggunaan biji kopi berkualitas tinggi.
+          </p>
+        </div>
+      </div>
+      <!-- kopi luwak capuccino -->
+      <div class="menu_kopi_luwak_capuccino">
+        <div class="menu_left_kopi_capuccino">
+          <img src="../img/kopi-luwak-capuccino.jpg" alt="">
+          <!-- detail produk -->
+          <div class="detail_">
+            <div class="detail_top flex justify-between">
+              <div class="price">13k</div>
+
+            </div>
+            <div class="detail_middle plus_min flex justify-between">
+              <!-- ========= coffee yang tersedia ============ -->
+              <div class="stock flex items-center">
+                <div class="icon_coffee_cup_stock flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      d="M2 4h8a.5.5 0 0 1 .5.5V9a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2V4.5A.5.5 0 0 1 2 4ZM.5 13.5h13m-3-8.5h1a2 2 0 0 1 2 2h0a2 2 0 0 1-2 2h-1M3 .5v1m5-1v1M5.5.5v1" />
+                  </svg>
+                </div>
+                <p class="px-2">stock</p>
+                <div id="count"></div>
+              </div>
+              <button type="submit" id="addCart">Add Chart</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu_right_kopi_hitam">
+          <h1>Kopi Luwak Capuccino</h1>
+          <p class="deskripsi">
+            Kopi Luwak Cappuccino memiliki cita rasa kopi yang lembut serta memiliki aroma yang khas dari biji kopi
+            Luwak, yang disempurnakan dengan kelembutan susu dan kelezatan busa susu
+          </p>
+        </div>
+      </div>
+      <!-- kopi luwak latte -->
+      <div class="menu_kopi_luwak_latte">
+        <div class="menu_left_kopi_latte">
+          <img src="../img/kopi-luwak-latte.jpg" alt="">
+          <!-- detail produk -->
+          <div class="detail_">
+            <div class="detail_top flex justify-between">
+              <div class="price">13k</div>
+
+            </div>
+            <div class="detail_middle plus_min flex justify-between">
+
+              <!-- ========= coffee yang tersedia ============ -->
+              <div class="stock flex items-center">
+                <div class="icon_coffee_cup_stock flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      d="M2 4h8a.5.5 0 0 1 .5.5V9a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2V4.5A.5.5 0 0 1 2 4ZM.5 13.5h13m-3-8.5h1a2 2 0 0 1 2 2h0a2 2 0 0 1-2 2h-1M3 .5v1m5-1v1M5.5.5v1" />
+                  </svg>
+                </div>
+                <p class="px-2">stock</p>
+                <div id="count"></div>
+              </div>
+              <button type="submit" id="addCart">Add Chart</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu_right_kopi_hitam">
+          <h1>Kopi Luwak Latte</h1>
+          <p class="deskripsi">
+            kopi luwak latte terbuat dari kombinasi kelembutan susu panas dan espresso dari biji kopi luwak yang
+            eksklusif dalam suasana santai.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- payment page -->
+    <div class="cart_container">
+      <h1>My Cart</h1>
+      <div id="cartItems">
+      </div>
+      <div class="price">
+        <div class="flex gap-2">
+          <p>total</p>
+          <p id="total">0</p>
+        </div>
+        <button><a href="../index.html">Pesan Sekarang</a></button>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="left">
+      <div class="logo">
+        <img src="../img/logo_coffee.png" alt="">
+        <h1>Kopi Luwak</h1>
+
+      </div>
+      <div class="social_media">
+        <p>The finest coffee in the world, delivered to your door.</p>
+        <h5>Follow Us</h5>
+        <a href="https://www.instagram.com/thekopiluwakcompany">
+          <iconify-icon icon="iconoir:instagram"></iconify-icon>
+        </a>
+        <a href="https://twitter.com/kopiluwakco">
+          <iconify-icon icon="uit:twitter-alt"></iconify-icon>
+        </a>
+        <a href="https://web.facebook.com/kopiluwakco?_rdc=1&_rdr">
+          <iconify-icon icon="mdi:facebook"></iconify-icon>
+        </a>
+      </div>
+    </div>
+    <div class="middle">
+      <h5>Footer Menu</h5>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact Us</a>
+      <a href="products.html">Shop</a>
+    </div>
+    <div class="right">
+      <h4>UK Head Office:</h4>
+      <h4>Kopi Luwak</h4>
+      <p>Barrow Road,</p>
+      <p>Bristol,</p>
+      <p>United Kingdom</p>
+      <p><span>Tel:</span> +44 (0)333 222 1111</p>
+      <h4>US Address:</h4>
+      <h4>Kopi Luwak,</h4>
+      <p>Gardena,</p>
+      <p>Los Angeles,</p>
+      <p>USA</p>
+      <p><span>Tel:</span> +1 888-222-333</p>
+    </div>
+  </footer>
+  <script src="../js/products.js"></script>
+  <script src="../js/animation.js"></script>
+</body>
+
+</html>
