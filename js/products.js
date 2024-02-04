@@ -10,13 +10,15 @@ window.addEventListener("scroll", function () {
 // ===========================  PAGE DETAIL PRODUK ====================
 
 // jumlah stock produk
-var countStock = [3];
+var countStock = 3;
 const count = document.querySelectorAll("#count")
 
 // mengisi jumlah stock produk untuk setiap produk
 count.forEach((stock) => {
   stock.innerHTML = countStock;
 })
+
+
 
 const stock = [3, 3, 3, 3]
 // masukkan keranjang
@@ -113,8 +115,7 @@ function displayCart(items) {
         <div class= "quantity">
           <div class="priceCart">
             <iconify-icon class= "deleteItem" icon="typcn:delete"></iconify-icon>
-            <span class= "price">
-              <p>price:</p>
+            <span class="price">
               <p>Rp${items.price}</p>
             </span>
           </div>
@@ -135,9 +136,8 @@ function displayCart(items) {
       countCart.innerHTML = countCartArr
     }
     return displayCountCart()
-
-    
   });
+
   deleteItem.addEventListener("click", function () {
     function displayTotalPrice(items) {
       const total = document.querySelector("#total")
@@ -147,6 +147,7 @@ function displayCart(items) {
     }
     return displayTotalPrice(items)
   });
+
 }
 
 

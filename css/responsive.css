@@ -168,9 +168,23 @@
     background: white;
     color: black;
   }
-
   .active {
     right: 0;
+  }
+  .img_box {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+  .name_img {
+    flex: 1 1 100px;
+    border: 1px solid;
+  }
+  .name_img img {
+    width: 50px;
+  }
+  .quantity {
+    flex: 1 1 100px;
   }
 
   .about_bijiKopi {
